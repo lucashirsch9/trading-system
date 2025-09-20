@@ -46,3 +46,13 @@ Deliverable: unified diff only (list extra files first if needed).
 
 ## Error Handling
 - When a command fails, ask for the **full terminal output** and provide a targeted fix. Do not re-bootstrap the whole repo or switch shells without reason.
+
+## Session Start Macro (Windows, Anaconda Prompt)
+Assume repo path: C:\Users\lucas\trading-system
+Commands to start every session:
+1) conda activate trading
+2) cd C:\Users\lucas\trading-system
+3) pre-commit run -a
+4) pytest -q
+
+If any step fails, ask for the full terminal output and provide a minimal patch. Do not switch shells unless explicitly requested by the user.
